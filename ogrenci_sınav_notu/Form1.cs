@@ -28,13 +28,18 @@ namespace ogrenci_sınav_notu
 
             if (ort >= 50) 
             {
-                durum = "Geçti";
+                durum = "Geçti.";
             }
             else
             {
-                durum = "Kaldı";
+                durum = "Kaldı.";
             } 
             textBox4.Text = ort.ToString("0.00") + " - " + durum;
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
